@@ -1,0 +1,129 @@
+/* start global rules*/
+html{
+    scroll-behavior: smooth;
+transition: 0.6s;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo",serif;
+}
+:root{
+    --main-color:#260553;
+    --main-transation-duration:0.5s;
+}
+.container{
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+
+}
+@media (min-width: 768px) {
+    .container{
+        width: 500px;
+    }
+}
+@media (min-width: 991px) {
+    .container{
+        width: 700px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1000px;
+    }
+}
+/* end global rules */
+body{
+    background-color: #eee;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px;
+    box-shadow: 2px 2px 3px -2px #77777747;  
+}
+
+
+@media (max-width: 500px) {
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h3{
+    text-align: center;
+    text-transform:capitalize ;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="number"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    margin-right: 5px;
+    color: #777;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+li span{
+    color: #1b043b;
+    font-weight: bold;
+    margin-right: 5px;
+}
+li{
+    color: #777;
+}
+input[type="submit"]{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: #260553;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover{
+    transform: translateY(-2px);
+    background-color: #1b043b;
+ 
+}
